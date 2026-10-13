@@ -8,7 +8,7 @@ return {
   'MaximilianLloyd/ascii.nvim',
   {
     'folke/snacks.nvim',
-    dependcies = {
+    dependencies = {
       'MaximilianLloyd/ascii.nvim',
     },
     opts = {
@@ -28,7 +28,7 @@ return {
 						-- stylua: ignore
 						-- @type snacks.dashboard.Item[]
 					keys = {
-						{ icon = " ", key = "f", desc = "Find File", action = ":Telescope find_files hidden=true" },
+						{ icon = " ", key = "f", desc = "Find File", action = "lua require('telescope.builtin').find_files({ hidden = true, path_display = { 'absolute' } })" },
 						{ icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
 						{ icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
 						{ icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
@@ -98,5 +98,15 @@ return {
     },
     -- Completion for `blink.cmp`
     -- dependencies = { "saghen/blink.cmp" },
+  },
+  {
+    'tpope/vim-surround',
+  },
+  {
+    'windwp/nvim-ts-autotag',
+    -- opts = {
+    --   enable_close = true,
+    --   enable_rename = true,
+    -- },
   },
 }

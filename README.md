@@ -2,13 +2,7 @@
 
 ## Introduction
 
-A starting point for Neovim that is:
-
-* Small
-* Single-file
-* Completely Documented
-
-**NOT** a Neovim distribution, but instead a starting point for your configuration.
+This is my Neovim configuration. It is a fork of Kickstart.nvim by the talented TJDeVries, a neovim starting point for custom configuration.
 
 ## Installation
 
